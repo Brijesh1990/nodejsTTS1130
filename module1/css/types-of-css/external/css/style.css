@@ -1,0 +1,143 @@
+@import url('font-face.css');
+body 
+{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: lightgray;
+    font-family: myownfonts !important;
+    position: relative;
+    z-index: 5;
+}
+
+.header 
+{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    top: 0;
+    left: 0;
+    margin-bottom: 0 !important;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+.logo
+{
+    width: 30%;
+    height: auto;
+    font-size: 40px;
+    letter-spacing: 1px;
+    padding: 10px;
+    font-family: myownfonts;
+}
+.search
+{
+width: 60%;
+height: auto;
+margin: auto;
+padding: 10px;
+}
+.search input 
+{
+    width: 90%;
+    height: auto;
+    margin: auto;
+    padding: 10px;  
+}
+.like-us
+{
+    width: 20%;
+    margin: auto;
+    padding: 10px;
+}
+.fa
+{
+    font-size: 30px !important;
+    padding: 3px;
+}
+.navbar 
+{
+    width: 80%;
+    height: auto !important;
+    margin: auto !important;
+    top: 0 !important;
+    margin-top: -1% !important;
+    background-color: black;
+}
+.navbar-link li 
+{
+    display: inline-block;
+    padding: 10px 30px;
+}
+.navbar-link a 
+{
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    text-transform: capitalize;
+    font-family: myownfonts;
+}
+.slider 
+{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    margin-top: -1%;
+}
+.slider img 
+{
+    width: 100%;
+    height: 400px;
+
+}
+
+.content 
+{
+    width: 80%;
+    height: 850px;
+    margin: auto;
+    margin-top: 2%;
+    background-color: white;
+    z-index: -5;
+}
+
+.like
+{
+    width: 180px;
+    height: 35px;
+    margin: auto;
+    padding: 15px;
+    background-color: black;
+    color: white;
+    position: relative;
+    position: fixed !important;
+    margin-top: -60%;
+    transition: 0.5s ease all;
+}
+.like:hover 
+{
+width: 185px;
+background-color: red !important;
+color: white !important;
+}
+.click-whatsapp
+{
+    width: auto;
+    height: auto;
+    margin: auto;
+    padding: 25px;
+    background-color: rgb(79, 195, 7);
+    color: white;
+    position: relative;
+    position: fixed !important;
+    float: right;
+    margin-top: -62%;
+    margin-left: 93%;
+    border-radius: 50%;
+    transition: 0.5s ease all;
+}

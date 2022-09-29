@@ -1,0 +1,162 @@
+body 
+{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;    
+  
+   
+}
+html ul li h1 h2 h3 h4 h5 h6 
+{
+    margin: 0;
+    padding: 0;
+}
+.header 
+{
+    width: 100%;
+    height: auto;
+    background: url('../images/banner1.jpg') no-repeat center;
+    background-size: cover;
+    color:white !important;
+  
+}
+.navbar
+{
+    width: 100%;
+    height: auto;
+    background: rgba(10, 0, 0, 0.2) !important;   
+    color: white !important;
+    border-bottom:solid 1px white;
+   
+}
+.navbar-brand h1
+{
+    font-weight: 300 !important;
+
+}
+.slider
+{
+    width: 100%;
+    height: 500px;
+    background: rgba(10, 0, 0, 0.2) !important;   
+    color: white !important;
+    border-bottom:solid 1px white;  
+    
+}
+.slider h1
+{
+    width: 70%;
+    height: auto;
+    margin: 0;
+    letter-spacing: 2px;
+    font-size: 65px;
+    font-weight: 200;
+    line-height: -15;
+    margin-top: 6% !important;
+}
+.slider p 
+{
+    letter-spacing: 2px;
+    font-size: 35px;
+    font-weight: 200;  
+}
+.btn-outline-light
+{
+    border: solid 2px white;
+    width: 220px;
+    border-radius: 0;
+
+}
+.btn-outline-light:hover 
+{
+    background-color: transparent !important;
+    color: white;
+}
+.modal-dialog
+{
+    max-width: 60%;
+    height: auto;
+    margin-top: 8%;
+    padding: 15px;
+}
+
+.navbar-link li
+{
+    display: inline-block;
+    padding: 5px 35px;
+}
+.navbar-link a 
+{
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+}
+.bi-grid-3x3-gap
+{
+    font-size: 35px !important;
+    color: white;
+}
+.navbar-toggler
+{
+    border: none !important;
+}
+@media only screen and (min-width:320px) and (max-width:480px)
+{
+ 
+.bi-grid-3x3-gap
+{
+    font-size: 35px !important;
+    color: white;
+}
+.navbar-toggler
+{
+    border: transparent !important;
+
+}
+
+.slider h1
+{
+    width: 80%;
+    height: auto;
+    margin: 0;
+    letter-spacing: 2px;
+    font-size: 45px;
+    font-weight: 200;
+    line-height: -15;
+    margin-top: 6% !important;
+}
+.slider p 
+{
+    letter-spacing: 2px;
+    font-size: 25px;
+    font-weight: 200;  
+}
+.btn-outline-light
+{
+    border: solid 2px white;
+    width: 150px;
+    border-radius: 0;
+
+}
+.navbar-link li
+{
+    display:block;
+    padding: 0px 0px;
+}
+.modal-dialog
+{
+    max-width: 100% !important;
+    height: auto;
+    margin-top: 8%;
+    padding: 15px;
+}
+.btn-outline-dark 
+{
+    width: 100% !important;
+    font-size: 13px !important;
+}
+.col-6 
+{
+    width: 50%;
+}
+}
