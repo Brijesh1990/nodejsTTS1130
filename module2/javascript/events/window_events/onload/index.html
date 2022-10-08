@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='js/loader.js'></script>
+    <style>
+        #loader
+        {
+            width: 300px;
+            height: 300px;
+            top: 5%;
+            left: 25%;
+            margin-top: 10%;
+            margin-left: 35%;
+            background: url('./image/loader.gif') no-repeat;
+            background-size: cover;
+        }
+        #content
+        {
+            display: none;
+        }
+    </style>
+</head>
+<body onload="MainLoader()">
+    <div id="loader"></div>
+    <div id="content">
+        <h1>We loading here</h1>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio fugiat voluptatem officiis sit consequuntur nostrum excepturi. Dolorum quis id maiores rerum amet dolore laborum, sapiente, expedita voluptas consequuntur veritatis vero!</p>
+    </div>
+</body>
+</html>

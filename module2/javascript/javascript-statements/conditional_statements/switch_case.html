@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+
+    <script>
+        function chkgrade()
+        {
+            var grade=document.getElementById("grade").value;
+            switch(grade)
+            {
+                case 'A':
+                    // document.write("<h4>You are topper students &#9786 </h4>");
+                    alert("You are topper students");
+                    break;
+                case 'B':
+                console.log("You are average students &#9786");
+                break;
+        
+                case 'C':
+                    console.log("You are Failed students &#9785");
+                    break;
+        
+                 default: 
+                 console.log("sorry your grade is not found anywhere contact with admin");
+                 break; 
+            }
+        }
+        </script>
+        
+        <center>
+        <h4>Enter Your grade A,B,C formate Only</h4>    
+        Enter Your Grade :<input type="text" name="grade" id="grade" placeholder="Enter Your Grade *" required><br><br>
+        <button type="button" name="btn" id="clk" onclick="chkgrade()">Check >></button>
+        </center>
+        
+    
+</body>
+</html>

@@ -1,0 +1,31 @@
+<script>
+    // if are executes when conditions is true but else if is executes while check conditions multiple times while is conditions is true els if is false else is executed.
+    function chk()
+    { 
+    var a=parseInt(document.getElementById("a").value);
+    var b=parseInt(document.getElementById("b").value);
+    var c=parseInt(document.getElementById("c").value);
+    
+    if(a>b && a>c)
+    {
+        console.log('N1 is Max Numbers')
+    }
+    else if(b>a && b>c)
+    {
+        console.log('N2 is Max Numbers')
+    }
+    else 
+    {
+        console.log('N3 is Max Numebers')
+    }
+
+}
+    
+
+</script>
+<center>
+<input type="text" id="a" placeholder="Enter N1 numbers"><br><br>
+<input type="text" id="b" placeholder="Enter N2 numbers"><br><br>
+<input type="text" id="c" placeholder="Enter N3 numbers"><br><br>
+<button type="button" onclick="chk()">check >> </button>
+<center>
