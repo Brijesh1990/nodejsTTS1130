@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='js/crt.js'></script>
+    <script>
+        function test()
+        {
+            document.getElementById("hd").style="display:none";
+            window.print();
+        }
+    </script>
+</head>
+<body bgcolor="lightgray">
+    <div style="width: 80%; height: auto; margin: auto;"> 
+    <h2>ViewCart(1)</h2>
+    <table>
+        <tr>
+            <th>#</th>
+            <th>Pimage</th>
+            <th>Pname</th>
+            <th>Price</th>
+            <th>Select QTY</th>
+            <th>Action</th>
+            
+        </tr>
+        <tr align="center">
+            <td>1001</td>
+            <td><img src="https://images.pexels.com/photos/5967666/pexels-photo-5967666.png?auto=compress&cs=tinysrgb&w=600" width="95px" height="95px"></td>
+            <td>Puma shoes</td>
+            <td><input type="text" id="price" value="2500" readonly style="border: none; background-color: lightgray; margin-left: 50%; width:200px"></td>
+            <td><input type="number" min="1" max="10" id="qty" value="1" onchange="subtot()"></td>
+            <td><a href="#">Delete</a></td>
+        </tr>
+
+        <tr align="center">
+            <td colspan="6"><h2 align="right" style="padding:15px; background-color:black; color:white">Subtotals of products Rs.<label id="tot">2500</label></h2></td>
+        </tr>
+
+        <tr align="center">
+            <td colspan="6"><h2 align="right" style="padding:15px; background-color:black; color:white; width:30%; float:right" onclick="test()" id="hd">Print Bill ?</h2></td>
+        </tr>
+
+    </table>
+    </div>
+</body>
+</html>
