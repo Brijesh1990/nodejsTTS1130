@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/gray.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/editor.css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src='js/jquery.js'></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="js/editor.js"></script>
+  
+<script>
+    
+    $(document).ready(function() {
+				$("#txtEditor").Editor();
+			});   
+       
+   </script>
+
+    <style>
+    
+        #login-form
+        {
+            width: 30%;
+            height: auto;
+            margin: auto;
+            background-color: black;
+            color: white;
+            padding: 20px;
+            margin-top: 3%;
+        }
+       input::placeholder 
+        {
+            color: black !important;
+
+        }
+    </style>
+
+</head>
+<body>
+    <div id="login-form">
+        <form id="frm" action="welcome.html">
+         
+            <input type="text" name="email" placeholder="Email *" data-bvalidator="required,email">
+            <br><br>
+            <input type="text" name="mobile" data-bvalidator="required,minlen[10],maxlen[10],digit" placeholder="Mobile *">
+            <br><br>
+            <input type="text" name="pass" data-bvalidator="required,minlen[4],maxlen[10]" placeholder="Passwod *">
+            <br><br>
+           
+            <textarea  name="msg" id="txtEditor" required placeholder="Message *" class="form-control" style="height: 200px;"></textarea>
+           
+            <br><br>
+            
+            <input type="submit" name="sub" value="Login">
+
+           
+        </form>
+    </div>
+ 
+<script src='js/jquery.bvalidator.min.js'></script>
+<script src='js/default.min.js'></script>
+<script src='js/gray.js'></script>
+<script>
+    $(document).ready(function(){
+         $("#frm").bValidator();
+         });
+
+</script>
+
+</body>
+</html>
